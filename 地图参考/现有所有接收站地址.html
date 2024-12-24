@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://gcore.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://gcore.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_26f70185f40f966f4b374ccd8fd22d25 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_26f70185f40f966f4b374ccd8fd22d25" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_26f70185f40f966f4b374ccd8fd22d25 = L.map(
+                "map_26f70185f40f966f4b374ccd8fd22d25",
+                {
+                    center: [30.249006, 120.210114],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_90f5588fda9298d642b9b2454bd68c3b = L.tileLayer(
+                "http://webrd02.is.autonavi.com/appmaptile?lang=zh_cn\u0026size=1\u0026scale=1\u0026style=7\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "default", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_90f5588fda9298d642b9b2454bd68c3b.addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var marker_c067f5dad36f49f1e863f6346a2d16bf = L.marker(
+                [29.885536, 121.997063],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_7d5b8a207081ec821453770ebce56172 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c067f5dad36f49f1e863f6346a2d16bf.setIcon(icon_7d5b8a207081ec821453770ebce56172);
+        
+    
+        var popup_6759b3c84d9c12ae251c14470788368c = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_e5905c3468817d3e06646c2f9c298f33 = $(`<div id="html_e5905c3468817d3e06646c2f9c298f33" style="width: 100.0%; height: 100.0%;">                 接收站：新奥舟山<br>                 现有车辆数目: 5<br>                 </div>`)[0];
+                popup_6759b3c84d9c12ae251c14470788368c.setContent(html_e5905c3468817d3e06646c2f9c298f33);
+            
+        
+
+        marker_c067f5dad36f49f1e863f6346a2d16bf.bindPopup(popup_6759b3c84d9c12ae251c14470788368c)
+        ;
+
+        
+    
+    
+            marker_c067f5dad36f49f1e863f6346a2d16bf.bindTooltip(
+                `<div>
+                     新奥舟山, 5
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_46770bdb12a5c0055404fef5212ad864 = L.marker(
+                [34.289903, 120.269435],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_618efd16577c4fe3772290b43eaf91d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_46770bdb12a5c0055404fef5212ad864.setIcon(icon_618efd16577c4fe3772290b43eaf91d4);
+        
+    
+        var popup_1ba55192949544e92e049dbdae1ded71 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_128f618dd283d7df7dcdd1bf5dfecab2 = $(`<div id="html_128f618dd283d7df7dcdd1bf5dfecab2" style="width: 100.0%; height: 100.0%;">                 接收站：海油滨海<br>                 </div>`)[0];
+                popup_1ba55192949544e92e049dbdae1ded71.setContent(html_128f618dd283d7df7dcdd1bf5dfecab2);
+            
+        
+
+        marker_46770bdb12a5c0055404fef5212ad864.bindPopup(popup_1ba55192949544e92e049dbdae1ded71)
+        ;
+
+        
+    
+    
+            var marker_f2e30609742c3f6e2be67bf5c26eb905 = L.marker(
+                [32.526554, 121.428679],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_dae6839e13fba3b4a9111887d49998f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f2e30609742c3f6e2be67bf5c26eb905.setIcon(icon_dae6839e13fba3b4a9111887d49998f9);
+        
+    
+        var popup_199d21043386f6222aa9cd1bbdeefc38 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_b182c91a67deb9191ecd0cb1d4d45834 = $(`<div id="html_b182c91a67deb9191ecd0cb1d4d45834" style="width: 100.0%; height: 100.0%;">                 接收站：中石油如东<br>                 </div>`)[0];
+                popup_199d21043386f6222aa9cd1bbdeefc38.setContent(html_b182c91a67deb9191ecd0cb1d4d45834);
+            
+        
+
+        marker_f2e30609742c3f6e2be67bf5c26eb905.bindPopup(popup_199d21043386f6222aa9cd1bbdeefc38)
+        ;
+
+        
+    
+    
+            var marker_221816ae37d25c80dc5d9c57bd4117c5 = L.marker(
+                [31.291122, 121.709772],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_89ea502eadb3be15c06270dac43b39a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_221816ae37d25c80dc5d9c57bd4117c5.setIcon(icon_89ea502eadb3be15c06270dac43b39a1);
+        
+    
+        var popup_7e45987bb4d2585cb45a24b3b275ee9b = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_201d3daa07b720880cdb9c81b310024b = $(`<div id="html_201d3daa07b720880cdb9c81b310024b" style="width: 100.0%; height: 100.0%;">                 接收站：上海五号沟<br>                 </div>`)[0];
+                popup_7e45987bb4d2585cb45a24b3b275ee9b.setContent(html_201d3daa07b720880cdb9c81b310024b);
+            
+        
+
+        marker_221816ae37d25c80dc5d9c57bd4117c5.bindPopup(popup_7e45987bb4d2585cb45a24b3b275ee9b)
+        ;
+
+        
+    
+    
+            var marker_cab6f24ad1c7f31054c8af6471861f9e = L.marker(
+                [30.586237, 115.021021],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_ab945b07933703313289e42c7d149dbf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cab6f24ad1c7f31054c8af6471861f9e.setIcon(icon_ab945b07933703313289e42c7d149dbf);
+        
+    
+        var popup_23873038e05e0e92d5f7422f29f77a84 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_d7f6c42110222e68205185d05ceb4e70 = $(`<div id="html_d7f6c42110222e68205185d05ceb4e70" style="width: 100.0%; height: 100.0%;">                 接收站：黄冈中石油<br>                 </div>`)[0];
+                popup_23873038e05e0e92d5f7422f29f77a84.setContent(html_d7f6c42110222e68205185d05ceb4e70);
+            
+        
+
+        marker_cab6f24ad1c7f31054c8af6471861f9e.bindPopup(popup_23873038e05e0e92d5f7422f29f77a84)
+        ;
+
+        
+    
+    
+            var marker_5e14ec95fa819a5b1424d12ab4eaddcd = L.marker(
+                [30.677944, 121.250045],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_680d046d01c5a0145675e3c0e15b37ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5e14ec95fa819a5b1424d12ab4eaddcd.setIcon(icon_680d046d01c5a0145675e3c0e15b37ee);
+        
+    
+        var popup_7b14a3456dc16b1a59347a1d7a17607a = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_69ee1f7071de7dda4733524d497a69fa = $(`<div id="html_69ee1f7071de7dda4733524d497a69fa" style="width: 100.0%; height: 100.0%;">                 接收站：杭嘉鑫<br>                 现有车辆数目: 5<br>                 </div>`)[0];
+                popup_7b14a3456dc16b1a59347a1d7a17607a.setContent(html_69ee1f7071de7dda4733524d497a69fa);
+            
+        
+
+        marker_5e14ec95fa819a5b1424d12ab4eaddcd.bindPopup(popup_7b14a3456dc16b1a59347a1d7a17607a)
+        ;
+
+        
+    
+    
+            marker_5e14ec95fa819a5b1424d12ab4eaddcd.bindTooltip(
+                `<div>
+                     杭嘉鑫, 5
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_9bac1b90a243ba5533e19d71cbde7f14 = L.marker(
+                [25.216803, 118.987749],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_d095e421e0ad62fbb96519239d7dcb47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9bac1b90a243ba5533e19d71cbde7f14.setIcon(icon_d095e421e0ad62fbb96519239d7dcb47);
+        
+    
+        var popup_1e0cd489a3d8dc4e6248f1b53b015c55 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_47e42837164bc8c0c610f0f6b2890779 = $(`<div id="html_47e42837164bc8c0c610f0f6b2890779" style="width: 100.0%; height: 100.0%;">                 接收站：海油莆田<br>                 </div>`)[0];
+                popup_1e0cd489a3d8dc4e6248f1b53b015c55.setContent(html_47e42837164bc8c0c610f0f6b2890779);
+            
+        
+
+        marker_9bac1b90a243ba5533e19d71cbde7f14.bindPopup(popup_1e0cd489a3d8dc4e6248f1b53b015c55)
+        ;
+
+        
+    
+    
+            var marker_95c925eb976d39ebe47c924ecfb3b80e = L.marker(
+                [32.035706, 121.747805],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_1945a6604820f197583ad96cb36de933 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_95c925eb976d39ebe47c924ecfb3b80e.setIcon(icon_1945a6604820f197583ad96cb36de933);
+        
+    
+        var popup_4e471a7711a51d033ee1cda386f84ba4 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_248a3a02ca6d1279d10748d0ce1c36e4 = $(`<div id="html_248a3a02ca6d1279d10748d0ce1c36e4" style="width: 100.0%; height: 100.0%;">                 接收站：启东广汇<br>                 现有车辆数目: 4<br>                 </div>`)[0];
+                popup_4e471a7711a51d033ee1cda386f84ba4.setContent(html_248a3a02ca6d1279d10748d0ce1c36e4);
+            
+        
+
+        marker_95c925eb976d39ebe47c924ecfb3b80e.bindPopup(popup_4e471a7711a51d033ee1cda386f84ba4)
+        ;
+
+        
+    
+    
+            marker_95c925eb976d39ebe47c924ecfb3b80e.bindTooltip(
+                `<div>
+                     启东广汇, 4
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_b94c28e75508c43a0add755dd4ae3d29 = L.marker(
+                [29.892449, 122.097223],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_0393c0f23a7fb38ac376907828b11bc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b94c28e75508c43a0add755dd4ae3d29.setIcon(icon_0393c0f23a7fb38ac376907828b11bc4);
+        
+    
+        var popup_cd95d422213fe7357b219d311156a974 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_d8523a85d97f8305f5fba7c15abedc29 = $(`<div id="html_d8523a85d97f8305f5fba7c15abedc29" style="width: 100.0%; height: 100.0%;">                 接收站：北仑（最低价）<br>                 现有车辆数目: 1+2<br>                 </div>`)[0];
+                popup_cd95d422213fe7357b219d311156a974.setContent(html_d8523a85d97f8305f5fba7c15abedc29);
+            
+        
+
+        marker_b94c28e75508c43a0add755dd4ae3d29.bindPopup(popup_cd95d422213fe7357b219d311156a974)
+        ;
+
+        
+    
+    
+            marker_b94c28e75508c43a0add755dd4ae3d29.bindTooltip(
+                `<div>
+                     北仑（最低价）, 1+2
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_063a9b4ad11167cd80e16602389f5ece = L.marker(
+                [36.696996, 108.764858],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_9c5d8a0866b3a1cdc6781205642cb6cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_063a9b4ad11167cd80e16602389f5ece.setIcon(icon_9c5d8a0866b3a1cdc6781205642cb6cc);
+        
+    
+        var popup_8fb85a75d30a76a3f974e6ce23eaac47 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_d95d7a15ead19b1867cd4969c69ebf94 = $(`<div id="html_d95d7a15ead19b1867cd4969c69ebf94" style="width: 100.0%; height: 100.0%;">                 接收站：陕西志丹<br>                 </div>`)[0];
+                popup_8fb85a75d30a76a3f974e6ce23eaac47.setContent(html_d95d7a15ead19b1867cd4969c69ebf94);
+            
+        
+
+        marker_063a9b4ad11167cd80e16602389f5ece.bindPopup(popup_8fb85a75d30a76a3f974e6ce23eaac47)
+        ;
+
+        
+    
+    
+            var marker_7949cbf350f10119d57f4a943561e9cc = L.marker(
+                [35.724611, 112.538677],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_3d532dd4a155bdae2cf69db304c5e0bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7949cbf350f10119d57f4a943561e9cc.setIcon(icon_3d532dd4a155bdae2cf69db304c5e0bc);
+        
+    
+        var popup_5f2e63d1f1c697c9823c148a88e319fe = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_d6ac96408f6ca1843e6314f320151612 = $(`<div id="html_d6ac96408f6ca1843e6314f320151612" style="width: 100.0%; height: 100.0%;">                 接收站：山西华港<br>                 </div>`)[0];
+                popup_5f2e63d1f1c697c9823c148a88e319fe.setContent(html_d6ac96408f6ca1843e6314f320151612);
+            
+        
+
+        marker_7949cbf350f10119d57f4a943561e9cc.bindPopup(popup_5f2e63d1f1c697c9823c148a88e319fe)
+        ;
+
+        
+    
+    
+            var marker_603cafb33002d0749ac987ccd7ab86c5 = L.marker(
+                [39.554267, 110.17016],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_33b883b461b19dafec7e4936f7b3f003 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_603cafb33002d0749ac987ccd7ab86c5.setIcon(icon_33b883b461b19dafec7e4936f7b3f003);
+        
+    
+        var popup_95913fb384384660f6264ef4e3218255 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_b1226e70763faee55870221079298301 = $(`<div id="html_b1226e70763faee55870221079298301" style="width: 100.0%; height: 100.0%;">                 接收站：内蒙汇能<br>                 </div>`)[0];
+                popup_95913fb384384660f6264ef4e3218255.setContent(html_b1226e70763faee55870221079298301);
+            
+        
+
+        marker_603cafb33002d0749ac987ccd7ab86c5.bindPopup(popup_95913fb384384660f6264ef4e3218255)
+        ;
+
+        
+    
+    
+            var marker_fc92ef92f7fedc86dcee1aa920c38010 = L.marker(
+                [38.301562, 117.853261],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_af83b5663c48689efe94ae39594b8e33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fc92ef92f7fedc86dcee1aa920c38010.setIcon(icon_af83b5663c48689efe94ae39594b8e33);
+        
+    
+        var popup_f4174c24f70e575c4c93406e225cf5a2 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_e97488a118ceebdac36f96dbab6a613f = $(`<div id="html_e97488a118ceebdac36f96dbab6a613f" style="width: 100.0%; height: 100.0%;">                 接收站：河北黄骅中翔<br>                 </div>`)[0];
+                popup_f4174c24f70e575c4c93406e225cf5a2.setContent(html_e97488a118ceebdac36f96dbab6a613f);
+            
+        
+
+        marker_fc92ef92f7fedc86dcee1aa920c38010.bindPopup(popup_f4174c24f70e575c4c93406e225cf5a2)
+        ;
+
+        
+    
+    
+            var marker_64b77a798013f8c144523841c7ab8180 = L.marker(
+                [36.154201, 107.743616],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_14c319cd5ed9e40911cc32b64d8e25ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_64b77a798013f8c144523841c7ab8180.setIcon(icon_14c319cd5ed9e40911cc32b64d8e25ec);
+        
+    
+        var popup_bef3a1472dce54f4df341253c93062e9 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_3fd9ccac6d13b8d1cbd569a4a6d65a13 = $(`<div id="html_3fd9ccac6d13b8d1cbd569a4a6d65a13" style="width: 100.0%; height: 100.0%;">                 接收站：甘肃庆阳瑞华<br>                 </div>`)[0];
+                popup_bef3a1472dce54f4df341253c93062e9.setContent(html_3fd9ccac6d13b8d1cbd569a4a6d65a13);
+            
+        
+
+        marker_64b77a798013f8c144523841c7ab8180.bindPopup(popup_bef3a1472dce54f4df341253c93062e9)
+        ;
+
+        
+    
+    
+            var marker_a5ff791cd61056c09e2ab4a181fc2be7 = L.marker(
+                [29.594768, 107.54418],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_51728a68262ec7b7543e281db3931dd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a5ff791cd61056c09e2ab4a181fc2be7.setIcon(icon_51728a68262ec7b7543e281db3931dd2);
+        
+    
+        var popup_110d57bc523d00a1eb1bd11bc7da8dda = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_a1db11fbec61306ecf656b359d2a2b1a = $(`<div id="html_a1db11fbec61306ecf656b359d2a2b1a" style="width: 100.0%; height: 100.0%;">                 接收站：重庆涪陵<br>                 </div>`)[0];
+                popup_110d57bc523d00a1eb1bd11bc7da8dda.setContent(html_a1db11fbec61306ecf656b359d2a2b1a);
+            
+        
+
+        marker_a5ff791cd61056c09e2ab4a181fc2be7.bindPopup(popup_110d57bc523d00a1eb1bd11bc7da8dda)
+        ;
+
+        
+    
+    
+            var marker_6b4a13434a9280db481077e7482ac227 = L.marker(
+                [22.574837, 114.441717],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_8619a5b21435c2a0589c6f1fdc7d5821 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b4a13434a9280db481077e7482ac227.setIcon(icon_8619a5b21435c2a0589c6f1fdc7d5821);
+        
+    
+        var popup_2c4a83cb5f83ab564a6377fc1bee8cd3 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_c555d1ed6595d6e4ee3dde79bc510c26 = $(`<div id="html_c555d1ed6595d6e4ee3dde79bc510c26" style="width: 100.0%; height: 100.0%;">                 接收站：深圳大鹏<br>                 </div>`)[0];
+                popup_2c4a83cb5f83ab564a6377fc1bee8cd3.setContent(html_c555d1ed6595d6e4ee3dde79bc510c26);
+            
+        
+
+        marker_6b4a13434a9280db481077e7482ac227.bindPopup(popup_2c4a83cb5f83ab564a6377fc1bee8cd3)
+        ;
+
+        
+    
+    
+            var marker_7762ec357008e64a04a92ea77b4369c6 = L.marker(
+                [26.014488, 104.511485],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_195046ce3ce4b9ad47626cad70216ee3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7762ec357008e64a04a92ea77b4369c6.setIcon(icon_195046ce3ce4b9ad47626cad70216ee3);
+        
+    
+        var popup_00251496c2c2117318cd81e92ccaec66 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_8dd6ab4a8f768d9cdfc6b6296fb5663a = $(`<div id="html_8dd6ab4a8f768d9cdfc6b6296fb5663a" style="width: 100.0%; height: 100.0%;">                 接收站：贵州黔桂<br>                 </div>`)[0];
+                popup_00251496c2c2117318cd81e92ccaec66.setContent(html_8dd6ab4a8f768d9cdfc6b6296fb5663a);
+            
+        
+
+        marker_7762ec357008e64a04a92ea77b4369c6.bindPopup(popup_00251496c2c2117318cd81e92ccaec66)
+        ;
+
+        
+    
+    
+            var marker_164bb0e097486887d0971fe02a4120a0 = L.marker(
+                [43.762542, 94.994317],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_8801a0ccd118ed87b9097fa301f7dc8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_164bb0e097486887d0971fe02a4120a0.setIcon(icon_8801a0ccd118ed87b9097fa301f7dc8d);
+        
+    
+        var popup_7ee231d8a2e94b8513b05e0f3c3d4c49 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_47153b1ade74a7c3c9869db9b9095b2a = $(`<div id="html_47153b1ade74a7c3c9869db9b9095b2a" style="width: 100.0%; height: 100.0%;">                 接收站：新疆淖毛湖<br>                 </div>`)[0];
+                popup_7ee231d8a2e94b8513b05e0f3c3d4c49.setContent(html_47153b1ade74a7c3c9869db9b9095b2a);
+            
+        
+
+        marker_164bb0e097486887d0971fe02a4120a0.bindPopup(popup_7ee231d8a2e94b8513b05e0f3c3d4c49)
+        ;
+
+        
+    
+    
+            var marker_5e93480ed08e32c2ca8238058e7892ca = L.marker(
+                [38.47495, 106.245099],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_af15048c59c30a07eeabd9bc41fb4a67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5e93480ed08e32c2ca8238058e7892ca.setIcon(icon_af15048c59c30a07eeabd9bc41fb4a67);
+        
+    
+        var popup_5c05d1b294578d9ac45cd901ba2e26ae = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_83f73821a82a22a0d0ca9e31a0917446 = $(`<div id="html_83f73821a82a22a0d0ca9e31a0917446" style="width: 100.0%; height: 100.0%;">                 接收站：宁夏天利丰<br>                 </div>`)[0];
+                popup_5c05d1b294578d9ac45cd901ba2e26ae.setContent(html_83f73821a82a22a0d0ca9e31a0917446);
+            
+        
+
+        marker_5e93480ed08e32c2ca8238058e7892ca.bindPopup(popup_5c05d1b294578d9ac45cd901ba2e26ae)
+        ;
+
+        
+    
+    
+            var marker_2552af8f76a9a0ffc8f7c12eb841e4d5 = L.marker(
+                [38.96817, 121.894767],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_0d1df71f9af59495089aa9edd39ad846 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2552af8f76a9a0ffc8f7c12eb841e4d5.setIcon(icon_0d1df71f9af59495089aa9edd39ad846);
+        
+    
+        var popup_32b7b9a8e69fa4f6babb8217b7c02db8 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_969ad341ba67a2ea491f6ceb3dd3c0be = $(`<div id="html_969ad341ba67a2ea491f6ceb3dd3c0be" style="width: 100.0%; height: 100.0%;">                 接收站：中石油大连<br>                 </div>`)[0];
+                popup_32b7b9a8e69fa4f6babb8217b7c02db8.setContent(html_969ad341ba67a2ea491f6ceb3dd3c0be);
+            
+        
+
+        marker_2552af8f76a9a0ffc8f7c12eb841e4d5.bindPopup(popup_32b7b9a8e69fa4f6babb8217b7c02db8)
+        ;
+
+        
+    
+    
+            var marker_f6d0b9cfed07ef900744848a0649a360 = L.marker(
+                [38.942436, 117.890118],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_c32ff7ca1e300767132d30b813c2a9b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f6d0b9cfed07ef900744848a0649a360.setIcon(icon_c32ff7ca1e300767132d30b813c2a9b6);
+        
+    
+        var popup_7d57fc39b32bebcb72eaee3a216ec4de = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_71671d93cc8807151d4119d0e078f028 = $(`<div id="html_71671d93cc8807151d4119d0e078f028" style="width: 100.0%; height: 100.0%;">                 接收站：国网天津<br>                 现有车辆数目: 3<br>                 </div>`)[0];
+                popup_7d57fc39b32bebcb72eaee3a216ec4de.setContent(html_71671d93cc8807151d4119d0e078f028);
+            
+        
+
+        marker_f6d0b9cfed07ef900744848a0649a360.bindPopup(popup_7d57fc39b32bebcb72eaee3a216ec4de)
+        ;
+
+        
+    
+    
+            marker_f6d0b9cfed07ef900744848a0649a360.bindTooltip(
+                `<div>
+                     国网天津, 3
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_0fa8065ec9fe4a49304990da74bd30e5 = L.marker(
+                [21.906101, 113.222779],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_8868a4d158950d6fa6d9713f189e4e59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0fa8065ec9fe4a49304990da74bd30e5.setIcon(icon_8868a4d158950d6fa6d9713f189e4e59);
+        
+    
+        var popup_4962afccd94105461df68bb948f65839 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_a54cac561d57f6da08bb72d5ee4c7b31 = $(`<div id="html_a54cac561d57f6da08bb72d5ee4c7b31" style="width: 100.0%; height: 100.0%;">                 接收站：珠海金湾<br>                 </div>`)[0];
+                popup_4962afccd94105461df68bb948f65839.setContent(html_a54cac561d57f6da08bb72d5ee4c7b31);
+            
+        
+
+        marker_0fa8065ec9fe4a49304990da74bd30e5.bindPopup(popup_4962afccd94105461df68bb948f65839)
+        ;
+
+        
+    
+    
+            var marker_94b4b304cf47495d0e1590f4aa2b1768 = L.marker(
+                [21.443775, 109.535218],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_6924d9f28365ee73093b1b13f1e8193c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_94b4b304cf47495d0e1590f4aa2b1768.setIcon(icon_6924d9f28365ee73093b1b13f1e8193c);
+        
+    
+        var popup_d787122788c3cf8d4d6f6a1c84606b89 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_fc509a30af7e2e72131e9ab67358d1dc = $(`<div id="html_fc509a30af7e2e72131e9ab67358d1dc" style="width: 100.0%; height: 100.0%;">                 接收站：广西北海<br>                 </div>`)[0];
+                popup_d787122788c3cf8d4d6f6a1c84606b89.setContent(html_fc509a30af7e2e72131e9ab67358d1dc);
+            
+        
+
+        marker_94b4b304cf47495d0e1590f4aa2b1768.bindPopup(popup_d787122788c3cf8d4d6f6a1c84606b89)
+        ;
+
+        
+    
+    
+            var marker_78e3138a615586b16f97e59c3c52452a = L.marker(
+                [21.622216, 108.35581],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_173739a141521fa4d485b7cad5e56e35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_78e3138a615586b16f97e59c3c52452a.setIcon(icon_173739a141521fa4d485b7cad5e56e35);
+        
+    
+        var popup_94eb4ce401cf387bbe4a12b77af06503 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_8d14136fa10b58c877a29560a2ca4b33 = $(`<div id="html_8d14136fa10b58c877a29560a2ca4b33" style="width: 100.0%; height: 100.0%;">                 接收站：广西防城港<br>                 </div>`)[0];
+                popup_94eb4ce401cf387bbe4a12b77af06503.setContent(html_8d14136fa10b58c877a29560a2ca4b33);
+            
+        
+
+        marker_78e3138a615586b16f97e59c3c52452a.bindPopup(popup_94eb4ce401cf387bbe4a12b77af06503)
+        ;
+
+        
+    
+    
+            var marker_132e68a9b1db66aadf17794e82cee5a9 = L.marker(
+                [35.592826, 119.772332],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_dca5de3f30300a9442c7ccce66159b9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_132e68a9b1db66aadf17794e82cee5a9.setIcon(icon_dca5de3f30300a9442c7ccce66159b9e);
+        
+    
+        var popup_b4f2bf00659ddc12531ed58c39024895 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_8e5789289e3d7d02dd9aeee474081292 = $(`<div id="html_8e5789289e3d7d02dd9aeee474081292" style="width: 100.0%; height: 100.0%;">                 接收站：中石化青岛<br>                 </div>`)[0];
+                popup_b4f2bf00659ddc12531ed58c39024895.setContent(html_8e5789289e3d7d02dd9aeee474081292);
+            
+        
+
+        marker_132e68a9b1db66aadf17794e82cee5a9.bindPopup(popup_b4f2bf00659ddc12531ed58c39024895)
+        ;
+
+        
+    
+    
+            var marker_f4bcd864ff651f7d7b47c178b0ba7e1a = L.marker(
+                [38.745499, 117.724048],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_d7975caf9a930804050930e0645c3f29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f4bcd864ff651f7d7b47c178b0ba7e1a.setIcon(icon_d7975caf9a930804050930e0645c3f29);
+        
+    
+        var popup_93f5856ab32d23da3e72ca0c318190f8 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_1c00790f84cfb1f22e75907edae48759 = $(`<div id="html_1c00790f84cfb1f22e75907edae48759" style="width: 100.0%; height: 100.0%;">                 接收站：中石化天津<br>                 </div>`)[0];
+                popup_93f5856ab32d23da3e72ca0c318190f8.setContent(html_1c00790f84cfb1f22e75907edae48759);
+            
+        
+
+        marker_f4bcd864ff651f7d7b47c178b0ba7e1a.bindPopup(popup_93f5856ab32d23da3e72ca0c318190f8)
+        ;
+
+        
+    
+    
+            var marker_e7564bfbf6e22c4226c59f7164c88bce = L.marker(
+                [38.931581, 118.532184],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_d47da7d4e005b2c143c8f69a79c13d36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e7564bfbf6e22c4226c59f7164c88bce.setIcon(icon_d47da7d4e005b2c143c8f69a79c13d36);
+        
+    
+        var popup_4367aa968552558a5aafc429e6c9ed44 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_83f30b8b4c2e684fa8bf28a7638068e0 = $(`<div id="html_83f30b8b4c2e684fa8bf28a7638068e0" style="width: 100.0%; height: 100.0%;">                 接收站：河北曹妃甸<br>                 </div>`)[0];
+                popup_4367aa968552558a5aafc429e6c9ed44.setContent(html_83f30b8b4c2e684fa8bf28a7638068e0);
+            
+        
+
+        marker_e7564bfbf6e22c4226c59f7164c88bce.bindPopup(popup_4367aa968552558a5aafc429e6c9ed44)
+        ;
+
+        
+    
+    
+            var marker_b60e6142ce04a761eaca13f52c87c6f1 = L.marker(
+                [35.182144, 112.805507],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_7924ab042fd19a0af5f4e2f798d1fd2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b60e6142ce04a761eaca13f52c87c6f1.setIcon(icon_7924ab042fd19a0af5f4e2f798d1fd2c);
+        
+    
+        var popup_fd236fe66088f87b51d7a1685e06908e = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_397161dd974beeb80aea90e69f4e4463 = $(`<div id="html_397161dd974beeb80aea90e69f4e4463" style="width: 100.0%; height: 100.0%;">                 接收站：晋煤天庆<br>                 </div>`)[0];
+                popup_fd236fe66088f87b51d7a1685e06908e.setContent(html_397161dd974beeb80aea90e69f4e4463);
+            
+        
+
+        marker_b60e6142ce04a761eaca13f52c87c6f1.bindPopup(popup_fd236fe66088f87b51d7a1685e06908e)
+        ;
+
+        
+    
+    
+            var marker_751c45258d307f2ec5dfc74ebd301432 = L.marker(
+                [22.933814, 116.376537],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_960acb6fa9ca11962953dcc82f3af665 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_751c45258d307f2ec5dfc74ebd301432.setIcon(icon_960acb6fa9ca11962953dcc82f3af665);
+        
+    
+        var popup_89c28061dfc467ad555b09169a7fdc49 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_947ef9d21ec3147da02e31b7c0f4b144 = $(`<div id="html_947ef9d21ec3147da02e31b7c0f4b144" style="width: 100.0%; height: 100.0%;">                 接收站：国网粤东<br>                 </div>`)[0];
+                popup_89c28061dfc467ad555b09169a7fdc49.setContent(html_947ef9d21ec3147da02e31b7c0f4b144);
+            
+        
+
+        marker_751c45258d307f2ec5dfc74ebd301432.bindPopup(popup_89c28061dfc467ad555b09169a7fdc49)
+        ;
+
+        
+    
+    
+            var marker_41de04af4dee758dc2a9c506f7dd9122 = L.marker(
+                [35.194528, 119.389919],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_55b3fab7cedfd04e2105749cce5a1de8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_41de04af4dee758dc2a9c506f7dd9122.setIcon(icon_55b3fab7cedfd04e2105749cce5a1de8);
+        
+    
+        var popup_60c4d1d8427258be1d284f92c80e6666 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_d45ce255e5df221f82aca46d94d5c75c = $(`<div id="html_d45ce255e5df221f82aca46d94d5c75c" style="width: 100.0%; height: 100.0%;">                 接收站：山钢日照<br>                 </div>`)[0];
+                popup_60c4d1d8427258be1d284f92c80e6666.setContent(html_d45ce255e5df221f82aca46d94d5c75c);
+            
+        
+
+        marker_41de04af4dee758dc2a9c506f7dd9122.bindPopup(popup_60c4d1d8427258be1d284f92c80e6666)
+        ;
+
+        
+    
+    
+            var marker_6e566125aa8e530a33ca5aa933b02f11 = L.marker(
+                [35.629117, 112.53317],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_ad3d68a3ca1ba796dda71628ac77a11f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6e566125aa8e530a33ca5aa933b02f11.setIcon(icon_ad3d68a3ca1ba796dda71628ac77a11f);
+        
+    
+        var popup_546b720be615d3946f8fc1ba7da574fd = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_7c2c355bc5d86cb0643c5be362ff2c9d = $(`<div id="html_7c2c355bc5d86cb0643c5be362ff2c9d" style="width: 100.0%; height: 100.0%;">                 接收站：山西沁水<br>                 </div>`)[0];
+                popup_546b720be615d3946f8fc1ba7da574fd.setContent(html_7c2c355bc5d86cb0643c5be362ff2c9d);
+            
+        
+
+        marker_6e566125aa8e530a33ca5aa933b02f11.bindPopup(popup_546b720be615d3946f8fc1ba7da574fd)
+        ;
+
+        
+    
+    
+            var marker_65d95caa10eab54c5bd33beb68feb4a0 = L.marker(
+                [36.450873, 109.636299],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_3883dd4b4f0054f453838947f2671fc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65d95caa10eab54c5bd33beb68feb4a0.setIcon(icon_3883dd4b4f0054f453838947f2671fc1);
+        
+    
+        var popup_92e9c15acc4a73412255b0aae7d42751 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_2253abad1d277a4ff3b7a547b7593c68 = $(`<div id="html_2253abad1d277a4ff3b7a547b7593c68" style="width: 100.0%; height: 100.0%;">                 接收站：临镇<br>                 </div>`)[0];
+                popup_92e9c15acc4a73412255b0aae7d42751.setContent(html_2253abad1d277a4ff3b7a547b7593c68);
+            
+        
+
+        marker_65d95caa10eab54c5bd33beb68feb4a0.bindPopup(popup_92e9c15acc4a73412255b0aae7d42751)
+        ;
+
+        
+    
+    
+            var marker_9aef47e0a59d810a60b666921c055f44 = L.marker(
+                [36.710312, 109.83307],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_a24458e87c29f3b5872816c33ec86056 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9aef47e0a59d810a60b666921c055f44.setIcon(icon_a24458e87c29f3b5872816c33ec86056);
+        
+    
+        var popup_bcdd4c177c6d585050b792c076889c5d = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_53c2f5da25f8436d793ef7d04bad4b24 = $(`<div id="html_53c2f5da25f8436d793ef7d04bad4b24" style="width: 100.0%; height: 100.0%;">                 接收站：杨家湾<br>                 </div>`)[0];
+                popup_bcdd4c177c6d585050b792c076889c5d.setContent(html_53c2f5da25f8436d793ef7d04bad4b24);
+            
+        
+
+        marker_9aef47e0a59d810a60b666921c055f44.bindPopup(popup_bcdd4c177c6d585050b792c076889c5d)
+        ;
+
+        
+    
+    
+            var marker_9c0bd2d364b4c9053b7a9aed4ef98ead = L.marker(
+                [36.850373, 110.023827],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_b69d3d64d6689f408fca64a22420f353 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9c0bd2d364b4c9053b7a9aed4ef98ead.setIcon(icon_b69d3d64d6689f408fca64a22420f353);
+        
+    
+        var popup_341ede6f1a8fc252f785b802ac293546 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_da5a4464448d7eb5c05d5453ec78e7c2 = $(`<div id="html_da5a4464448d7eb5c05d5453ec78e7c2" style="width: 100.0%; height: 100.0%;">                 接收站：延川<br>                 </div>`)[0];
+                popup_341ede6f1a8fc252f785b802ac293546.setContent(html_da5a4464448d7eb5c05d5453ec78e7c2);
+            
+        
+
+        marker_9c0bd2d364b4c9053b7a9aed4ef98ead.bindPopup(popup_341ede6f1a8fc252f785b802ac293546)
+        ;
+
+        
+    
+    
+            var marker_0646c093e6ac279ef11a793161063769 = L.marker(
+                [36.778069, 109.353346],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_e68164fd9db1aff159c986de853aa0e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0646c093e6ac279ef11a793161063769.setIcon(icon_e68164fd9db1aff159c986de853aa0e6);
+        
+    
+        var popup_a2b61e0cb4e1a06dec5a085da4808e94 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_555753e9c673c486e7e528e90f2ac292 = $(`<div id="html_555753e9c673c486e7e528e90f2ac292" style="width: 100.0%; height: 100.0%;">                 接收站：安塞<br>                 </div>`)[0];
+                popup_a2b61e0cb4e1a06dec5a085da4808e94.setContent(html_555753e9c673c486e7e528e90f2ac292);
+            
+        
+
+        marker_0646c093e6ac279ef11a793161063769.bindPopup(popup_a2b61e0cb4e1a06dec5a085da4808e94)
+        ;
+
+        
+    
+    
+            var marker_5319a32dbfaddbc27883a33c17784be1 = L.marker(
+                [36.144649, 107.737933],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_0f659e396f22d57c3b608532c9a488ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5319a32dbfaddbc27883a33c17784be1.setIcon(icon_0f659e396f22d57c3b608532c9a488ac);
+        
+    
+        var popup_df15c6b9787129e18fb3ac51e98877c1 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_163727dce32d7f68319e13ca28afa891 = $(`<div id="html_163727dce32d7f68319e13ca28afa891" style="width: 100.0%; height: 100.0%;">                 接收站：庆阳博纳汇<br>                 </div>`)[0];
+                popup_df15c6b9787129e18fb3ac51e98877c1.setContent(html_163727dce32d7f68319e13ca28afa891);
+            
+        
+
+        marker_5319a32dbfaddbc27883a33c17784be1.bindPopup(popup_df15c6b9787129e18fb3ac51e98877c1)
+        ;
+
+        
+    
+    
+            var marker_a6968bac992f7b57f50e52c8705df05f = L.marker(
+                [38.839361, 100.860623],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_944213532f70bf28ee68dbbd86e37feb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a6968bac992f7b57f50e52c8705df05f.setIcon(icon_944213532f70bf28ee68dbbd86e37feb);
+        
+    
+        var popup_8ea81373bed217d7631e96caaf042acf = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_5261d79980335a719d67fd2467b47357 = $(`<div id="html_5261d79980335a719d67fd2467b47357" style="width: 100.0%; height: 100.0%;">                 接收站：张掖交投<br>                 </div>`)[0];
+                popup_8ea81373bed217d7631e96caaf042acf.setContent(html_5261d79980335a719d67fd2467b47357);
+            
+        
+
+        marker_a6968bac992f7b57f50e52c8705df05f.bindPopup(popup_8ea81373bed217d7631e96caaf042acf)
+        ;
+
+        
+    
+    
+            var marker_b956b19a6ebef86376e614ce1e0de9bf = L.marker(
+                [40.319563, 99.090725],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_3ec63e9b87a9e8512ebc13dfce343803 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b956b19a6ebef86376e614ce1e0de9bf.setIcon(icon_3ec63e9b87a9e8512ebc13dfce343803);
+        
+    
+        var popup_56f49983abd9db05cd32b95238081b08 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_de670af9982ccb5fa16743e1da8d0538 = $(`<div id="html_de670af9982ccb5fa16743e1da8d0538" style="width: 100.0%; height: 100.0%;">                 接收站：甘肃泰晟达<br>                 </div>`)[0];
+                popup_56f49983abd9db05cd32b95238081b08.setContent(html_de670af9982ccb5fa16743e1da8d0538);
+            
+        
+
+        marker_b956b19a6ebef86376e614ce1e0de9bf.bindPopup(popup_56f49983abd9db05cd32b95238081b08)
+        ;
+
+        
+    
+    
+            var marker_54be25e370ff153b32c07c910d080851 = L.marker(
+                [29.810981, 116.336337],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_dfc5be75a6218e3de9c91e0b785bfe67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_54be25e370ff153b32c07c910d080851.setIcon(icon_dfc5be75a6218e3de9c91e0b785bfe67);
+        
+    
+        var popup_c496caeb222277bf6d38a79bf733776f = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_4cb0e9cf92522b7594eac9927153830d = $(`<div id="html_4cb0e9cf92522b7594eac9927153830d" style="width: 100.0%; height: 100.0%;">                 接收站：省天湖口<br>                 </div>`)[0];
+                popup_c496caeb222277bf6d38a79bf733776f.setContent(html_4cb0e9cf92522b7594eac9927153830d);
+            
+        
+
+        marker_54be25e370ff153b32c07c910d080851.bindPopup(popup_c496caeb222277bf6d38a79bf733776f)
+        ;
+
+        
+    
+    
+            var marker_078ea23955816dbe0a08f766940bea5e = L.marker(
+                [34.858082, 117.450213],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_aff50a97577a8db824629ba1701573d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_078ea23955816dbe0a08f766940bea5e.setIcon(icon_aff50a97577a8db824629ba1701573d5);
+        
+    
+        var popup_78816107ff483d18048f25979cada1ad = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_587137a2da90858f87e77149b2bf52df = $(`<div id="html_587137a2da90858f87e77149b2bf52df" style="width: 100.0%; height: 100.0%;">                 接收站：枣庄薛能<br>                 </div>`)[0];
+                popup_78816107ff483d18048f25979cada1ad.setContent(html_587137a2da90858f87e77149b2bf52df);
+            
+        
+
+        marker_078ea23955816dbe0a08f766940bea5e.bindPopup(popup_78816107ff483d18048f25979cada1ad)
+        ;
+
+        
+    
+    
+            var marker_2adef391f9419369e02b49ec73684350 = L.marker(
+                [38.19302, 107.629587],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_8417027e2bd022b6d87b297d1b208f4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2adef391f9419369e02b49ec73684350.setIcon(icon_8417027e2bd022b6d87b297d1b208f4a);
+        
+    
+        var popup_032676ead648146c8074e092a9e3021f = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_cd7d8d5d3d3c5c535b3783a60d613707 = $(`<div id="html_cd7d8d5d3d3c5c535b3783a60d613707" style="width: 100.0%; height: 100.0%;">                 接收站：内蒙雅海<br>                 </div>`)[0];
+                popup_032676ead648146c8074e092a9e3021f.setContent(html_cd7d8d5d3d3c5c535b3783a60d613707);
+            
+        
+
+        marker_2adef391f9419369e02b49ec73684350.bindPopup(popup_032676ead648146c8074e092a9e3021f)
+        ;
+
+        
+    
+    
+            var marker_aa65cc3a2b46b7a6207bc7aa96502f1a = L.marker(
+                [40.867075, 113.802823],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_8ceee435541351dfae3f53ae04e098b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aa65cc3a2b46b7a6207bc7aa96502f1a.setIcon(icon_8ceee435541351dfae3f53ae04e098b3);
+        
+    
+        var popup_508f46a7f101ae1bd7bde626bee0b4f9 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_0be72cd32602cc372dd7404109774868 = $(`<div id="html_0be72cd32602cc372dd7404109774868" style="width: 100.0%; height: 100.0%;">                 接收站：内蒙兴洁<br>                 </div>`)[0];
+                popup_508f46a7f101ae1bd7bde626bee0b4f9.setContent(html_0be72cd32602cc372dd7404109774868);
+            
+        
+
+        marker_aa65cc3a2b46b7a6207bc7aa96502f1a.bindPopup(popup_508f46a7f101ae1bd7bde626bee0b4f9)
+        ;
+
+        
+    
+    
+            var marker_38543c6c05d873fb7b8a59d92aa48bc8 = L.marker(
+                [22.591054, 114.45228],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_cd3df19385eb3086c59a9c8b9f625634 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_38543c6c05d873fb7b8a59d92aa48bc8.setIcon(icon_cd3df19385eb3086c59a9c8b9f625634);
+        
+    
+        var popup_c99d68737ff8b40cf286dd80a56f8b80 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_f9b2ff95dd6d083051699476c929b633 = $(`<div id="html_f9b2ff95dd6d083051699476c929b633" style="width: 100.0%; height: 100.0%;">                 接收站：深圳迭福<br>                 </div>`)[0];
+                popup_c99d68737ff8b40cf286dd80a56f8b80.setContent(html_f9b2ff95dd6d083051699476c929b633);
+            
+        
+
+        marker_38543c6c05d873fb7b8a59d92aa48bc8.bindPopup(popup_c99d68737ff8b40cf286dd80a56f8b80)
+        ;
+
+        
+    
+    
+            var marker_73aea6f0c8f4dc2847459a03a87d4d86 = L.marker(
+                [38.942589, 118.546014],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_6f40baea54ee53575654bb57a4127bc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_73aea6f0c8f4dc2847459a03a87d4d86.setIcon(icon_6f40baea54ee53575654bb57a4127bc4);
+        
+    
+        var popup_e27839d57f4762c184ce8a31b4542bc1 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_13db8c67cc45afab5b84fbf0007fd5c8 = $(`<div id="html_13db8c67cc45afab5b84fbf0007fd5c8" style="width: 100.0%; height: 100.0%;">                 接收站：新天曹妃甸<br>                 </div>`)[0];
+                popup_e27839d57f4762c184ce8a31b4542bc1.setContent(html_13db8c67cc45afab5b84fbf0007fd5c8);
+            
+        
+
+        marker_73aea6f0c8f4dc2847459a03a87d4d86.bindPopup(popup_e27839d57f4762c184ce8a31b4542bc1)
+        ;
+
+        
+    
+    
+            var marker_658e2da15dc8c8bc8bbfac36a9ad6ca2 = L.marker(
+                [27.997426, 121.081283],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_893f8baf0bc42f410977cf6955efd92f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_658e2da15dc8c8bc8bbfac36a9ad6ca2.setIcon(icon_893f8baf0bc42f410977cf6955efd92f);
+        
+    
+        var popup_ed03126604b526c7a43597f02661139f = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_59924092f69ac55e8179d61e047ec734 = $(`<div id="html_59924092f69ac55e8179d61e047ec734" style="width: 100.0%; height: 100.0%;">                 接收站：浙能温州<br>                 现有车辆数目: 5+8<br>                 </div>`)[0];
+                popup_ed03126604b526c7a43597f02661139f.setContent(html_59924092f69ac55e8179d61e047ec734);
+            
+        
+
+        marker_658e2da15dc8c8bc8bbfac36a9ad6ca2.bindPopup(popup_ed03126604b526c7a43597f02661139f)
+        ;
+
+        
+    
+    
+            marker_658e2da15dc8c8bc8bbfac36a9ad6ca2.bindTooltip(
+                `<div>
+                     浙能温州, 5+8
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_eacc952c999198e994f64da76942463e = L.marker(
+                [36.133727, 110.067532],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_0fc6aebd1587be69a3a5aad8abf70386 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eacc952c999198e994f64da76942463e.setIcon(icon_0fc6aebd1587be69a3a5aad8abf70386);
+        
+    
+        var popup_a6a7ee19e833520c087823bf068a5f6a = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_00646094b7661449ec9d9531a26eb296 = $(`<div id="html_00646094b7661449ec9d9531a26eb296" style="width: 100.0%; height: 100.0%;">                 接收站：陕西新源<br>                 </div>`)[0];
+                popup_a6a7ee19e833520c087823bf068a5f6a.setContent(html_00646094b7661449ec9d9531a26eb296);
+            
+        
+
+        marker_eacc952c999198e994f64da76942463e.bindPopup(popup_a6a7ee19e833520c087823bf068a5f6a)
+        ;
+
+        
+    
+    
+            var marker_169d6ff6183f96bc0f8c2615f45e6b02 = L.marker(
+                [40.119408, 118.741772],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_419de3c1d9793f9f4e590ebacf3af1bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_169d6ff6183f96bc0f8c2615f45e6b02.setIcon(icon_419de3c1d9793f9f4e590ebacf3af1bf);
+        
+    
+        var popup_05d0272f8ea6b8d181de85343de395de = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_29437597b92d6b52b6e53fc945caadeb = $(`<div id="html_29437597b92d6b52b6e53fc945caadeb" style="width: 100.0%; height: 100.0%;">                 接收站：迁安九江<br>                 </div>`)[0];
+                popup_05d0272f8ea6b8d181de85343de395de.setContent(html_29437597b92d6b52b6e53fc945caadeb);
+            
+        
+
+        marker_169d6ff6183f96bc0f8c2615f45e6b02.bindPopup(popup_05d0272f8ea6b8d181de85343de395de)
+        ;
+
+        
+    
+    
+            var marker_399247e403c6c3b626e8f1cf06c1ac29 = L.marker(
+                [38.745499, 117.724048],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_fe80381b44d442a5ff695a16dd641143 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_399247e403c6c3b626e8f1cf06c1ac29.setIcon(icon_fe80381b44d442a5ff695a16dd641143);
+        
+    
+        var popup_355ef74c5f20de1095e03954a7b82a30 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_e041d952e0e61b5e8c52422e7d27853f = $(`<div id="html_e041d952e0e61b5e8c52422e7d27853f" style="width: 100.0%; height: 100.0%;">                 接收站：北燃天津<br>                 </div>`)[0];
+                popup_355ef74c5f20de1095e03954a7b82a30.setContent(html_e041d952e0e61b5e8c52422e7d27853f);
+            
+        
+
+        marker_399247e403c6c3b626e8f1cf06c1ac29.bindPopup(popup_355ef74c5f20de1095e03954a7b82a30)
+        ;
+
+        
+    
+    
+            var marker_86aefef2983ad2a9b88e30c1e26dcd0d = L.marker(
+                [38.942436, 117.890118],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_53fc52af5eb5799315e0da882e095f36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_86aefef2983ad2a9b88e30c1e26dcd0d.setIcon(icon_53fc52af5eb5799315e0da882e095f36);
+        
+    
+        var popup_6e197a2f64a9c7cafdc3eb87dd67c513 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_5a1fdc26ef4a79dfd25dd2ea31c3a586 = $(`<div id="html_5a1fdc26ef4a79dfd25dd2ea31c3a586" style="width: 100.0%; height: 100.0%;">                 接收站：海油天津<br>                 </div>`)[0];
+                popup_6e197a2f64a9c7cafdc3eb87dd67c513.setContent(html_5a1fdc26ef4a79dfd25dd2ea31c3a586);
+            
+        
+
+        marker_86aefef2983ad2a9b88e30c1e26dcd0d.bindPopup(popup_6e197a2f64a9c7cafdc3eb87dd67c513)
+        ;
+
+        
+    
+    
+            var marker_ca0e785bfab20d549c9240465f722ad0 = L.marker(
+                [24.263721, 118.130205],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_c501c621fcd8dc607b892560c6fbafe3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ca0e785bfab20d549c9240465f722ad0.setIcon(icon_c501c621fcd8dc607b892560c6fbafe3);
+        
+    
+        var popup_d4b7ca57bfecf2408792a9dabd68e722 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_31ea422929d243b1290495ca4765ca34 = $(`<div id="html_31ea422929d243b1290495ca4765ca34" style="width: 100.0%; height: 100.0%;">                 接收站：国网漳州<br>                 现有车辆数目: 4<br>                 </div>`)[0];
+                popup_d4b7ca57bfecf2408792a9dabd68e722.setContent(html_31ea422929d243b1290495ca4765ca34);
+            
+        
+
+        marker_ca0e785bfab20d549c9240465f722ad0.bindPopup(popup_d4b7ca57bfecf2408792a9dabd68e722)
+        ;
+
+        
+    
+    
+            marker_ca0e785bfab20d549c9240465f722ad0.bindTooltip(
+                `<div>
+                     国网漳州, 4
+                 </div>`,
+                {"permanent": true, "sticky": true}
+            );
+        
+    
+            var marker_81877f70fef02936b50ea670f9c4df9f = L.marker(
+                [35.615479, 112.535569],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_679b546c799b7a8255ffcd2f18514cd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_81877f70fef02936b50ea670f9c4df9f.setIcon(icon_679b546c799b7a8255ffcd2f18514cd8);
+        
+    
+        var popup_df60c7e22285ff6a21dd45caec2d18fe = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_c3fe6c3b02fc2789def305b59962b5d9 = $(`<div id="html_c3fe6c3b02fc2789def305b59962b5d9" style="width: 100.0%; height: 100.0%;">                 接收站：山西伟联<br>                 </div>`)[0];
+                popup_df60c7e22285ff6a21dd45caec2d18fe.setContent(html_c3fe6c3b02fc2789def305b59962b5d9);
+            
+        
+
+        marker_81877f70fef02936b50ea670f9c4df9f.bindPopup(popup_df60c7e22285ff6a21dd45caec2d18fe)
+        ;
+
+        
+    
+    
+            var marker_8c748803fe65a644a117ee1645e0d6fb = L.marker(
+                [35.709964, 112.534826],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_46a88289fa7cf33a946509008deae9c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8c748803fe65a644a117ee1645e0d6fb.setIcon(icon_46a88289fa7cf33a946509008deae9c6);
+        
+    
+        var popup_469718ebb55abd76ef11326c464697c6 = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_8cf988bd9b3a2eb98911cb7adc8f3e0a = $(`<div id="html_8cf988bd9b3a2eb98911cb7adc8f3e0a" style="width: 100.0%; height: 100.0%;">                 接收站：沁水浩坤<br>                 </div>`)[0];
+                popup_469718ebb55abd76ef11326c464697c6.setContent(html_8cf988bd9b3a2eb98911cb7adc8f3e0a);
+            
+        
+
+        marker_8c748803fe65a644a117ee1645e0d6fb.bindPopup(popup_469718ebb55abd76ef11326c464697c6)
+        ;
+
+        
+    
+    
+            var marker_5ed6500ab93a20de266da501d5804283 = L.marker(
+                [27.896376, 121.128125],
+                {}
+            ).addTo(map_26f70185f40f966f4b374ccd8fd22d25);
+        
+    
+            var icon_fa3d7d7c1d39eee219e61477c8b7d20c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5ed6500ab93a20de266da501d5804283.setIcon(icon_fa3d7d7c1d39eee219e61477c8b7d20c);
+        
+    
+        var popup_64c5402bd89822e464a4cd2e7d2fdece = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_e8664814d1c6869b3fefd1353d6c6679 = $(`<div id="html_e8664814d1c6869b3fefd1353d6c6679" style="width: 100.0%; height: 100.0%;">                 接收站：华峰<br>                 </div>`)[0];
+                popup_64c5402bd89822e464a4cd2e7d2fdece.setContent(html_e8664814d1c6869b3fefd1353d6c6679);
+            
+        
+
+        marker_5ed6500ab93a20de266da501d5804283.bindPopup(popup_64c5402bd89822e464a4cd2e7d2fdece)
+        ;
+
+        
+    
+</script>
+</html>
